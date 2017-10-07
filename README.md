@@ -16,7 +16,13 @@
 
 众所周知，编程语言，有很强的宗教情节。然而宗教情节常常只是无知的体现。
 
-在Stackoverflow  创始人在博客中曾经说道：我从没见过一个熟练使用Scheme,Haskell,C语言的程序员，不能在两天内学会Java，并且写出的代码质量不会比Java要好。我在接触了ML，Racket，Scheme以及Ruby后，再来看Java，就简单多了。如过去对泛型（generic）、迭代（Iterator）都很不了解，只是囫囵吐枣，学了就忘。现在回过头来，就简单多了。
+在Stackoverflow  创始人曾说道:
+
+> 我从没见过一个熟练使用Scheme,Haskell,C语言的程序员，不能在两天内学会Java，并且写出的代码质量不会比Java要好。
+
+
+
+我在接触了ML，Racket，Scheme以及Ruby后，再来看Java，就简单多了。之前学习泛型（generic）、迭代（Iterator）等概念使只是囫囵吐枣，学了就忘。现在回过头来，就简单多了。
 
 另外，SICP以及《冒号课堂》两本书都给我带来了巨大的启发。尤其是前者，整本书一直在强调”Abstraction”一词，而这，便是理解编程语言的极好切入点。
 

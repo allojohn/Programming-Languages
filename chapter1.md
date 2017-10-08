@@ -1,3 +1,2 @@
-# First Chapter
+以Java的generic为例，这是后期出现的语言功能，想要抽象传入的参数，不管什么类型都适用于函数，但是由于Java是静态类型，其中传入的参数实际上需要指定类型，因此这两个要求相互矛盾。早期的实现使用的的cast:将早期的类变成
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.

@@ -1,11 +1,11 @@
 ### 背景
 
-主要记录在Coursera上的\[Programming Languages \([https://www.coursera.org/learn/programming-languages/home\](https://www.coursera.org/learn/programming-languages/home\) "语言"\) 课程中学到的各种语言特性。  
+主要记录在Coursera上的[Programming Languages](https://www.coursera.org/learn/programming-languages/home) 课程中学到的各种语言特性。  
 部分参考了SICP、《冒号课堂》，以及王垠的博客。
 
 ### 语言特性
 
-在王垠的博客\[如何掌握所有的程序语言\]\([http://www.yinwang.org/blog-cn/2017/07/06/master-pl\)中，王垠谈到了学习编程的关键：掌握关键的语言特性，如递归、闭包、类型推导······掌握了这些语言特性，那么在不同的编程语言中游走就得心应手了。Coursera上的这门课介绍了诸多的语言特性，](http://www.yinwang.org/blog-cn/2017/07/06/master-pl%29中，王垠谈到了学习编程的关键：掌握关键的语言特性，如递归、闭包、类型推导······掌握了这些语言特性，那么在不同的编程语言中游走就得心应手了。Coursera上的这门课介绍了诸多的语言特性，)
+在王垠的博客[如何掌握所有的程序语言](http://www.yinwang.org/blog-cn/2017/07/06/master-pl) [中，王垠谈到了学习编程的关键：掌握关键的语言特性，如递归、闭包、类型推导······掌握了这些语言特性，那么在不同的编程语言中游走就得心应手了。Coursera上的这门课介绍了诸多的语言特性，](http://www.yinwang.org/blog-cn/2017/07/06/master-pl%29中，王垠谈到了学习编程的关键：掌握关键的语言特性，如递归、闭包、类型推导······掌握了这些语言特性，那么在不同的编程语言中游走就得心应手了。Coursera上的这门课介绍了诸多的语言特性，)
 
 ### 语言范式
 

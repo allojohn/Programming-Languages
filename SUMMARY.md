@@ -8,4 +8,5 @@
 * 速度迷思
 * [考察语言的两个象限](chapter1.md)
 * [具身认知与设计模式](ju-shen-ren-zhi-yu-she-ji-mo-shi.md)
+* [宏](hong.md)
 

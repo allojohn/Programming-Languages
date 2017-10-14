@@ -1,3 +1,9 @@
+> The importance of this is that there are
+>
+> powerful program-design techniques that rely on the ability to blur the
+>
+> traditional distinction between "passive" data and "active" processes.
+
 ### 高阶函数的意义
 
 高阶函数（first-class functions）的意义，在于通过增强函数的功能，使程序可以做到更好的抽象。函数有以下的特点：
@@ -16,7 +22,6 @@
 ```ML
 fun addition function x =
    1 + (function x)
-
 ```
 
 经编译后，REPL返回如下信息：
@@ -66,4 +71,30 @@ fun operate x =
 ```
 
 Add、Minus 均为辅助函数，它们在函数体内创建，在函数外则无法调用。
+
+
+
+### 函数被包含于数据结构
+
+最经典的将函数与数据结构结合的，恐怕就是map、filter了，其实他们的实现也很简单：
+
+```ML
+fun mymap  f x =
+  case x of
+      [] => []
+   | xs :: xs' => (f xs) :: (mymap f xs')
+   
+fun myfilter f x =
+  case x of
+      [] => []
+    | xs :: xs => if (f xs)
+		  then xs :: (myfilter f xs')
+		  else (myfilter f xs')   
+```
+
+
+
+
+
+
 

@@ -1,6 +1,6 @@
 ### 烧脑的递归
 
-我还记得自己一开始大量写递归函数的经历，那段时间我分别用ML和Scheme来写递归，烧脑，写了不少，但是还是不得其法。后来看了The Little Schemer，诶，我后悔没有早点看这本书，书中介绍的“十诫”\(ten commandments\)，启发极大。尤其是其中的几个写递归的技巧，如：
+我还记得自己一开始大量写递归函数的经历，那段时间我分别用ML和Scheme来写递归，烧脑，写了不少，但是还是不得其法。后来看了The Little Schemer，诶，我后悔没有早点接触此书。书中介绍的“十诫”\(ten commandments\)，启发极大。尤其是其中的几个写递归的技巧，如：
 
 > The fifth Commandment:
 >
@@ -9,9 +9,7 @@
 > When building a value with **x**,always use1for the value of the terminating line, for multiplying by1does not change the value of a multiplication.
 >
 > When building a value with **cons**,always consider\(\)for the value of the terminating line.
-
-
-
+>
 > The Seventh Commandment:
 >
 > Recur on the **subparts **that are of the **same nature**:
@@ -21,7 +19,7 @@
 >
 > expression.
 
-遵照这个技巧继续敲代码，慢慢地，递归就通了。后来再去写Essentials of Programming Languages中的递归作业，就很轻松了。
+遵照这些技巧继续敲代码，慢慢地，递归就通了。后来再去写Essentials of Programming Languages中的递归作业，就很轻松了。
 
 ### 规则
 
@@ -36,8 +34,6 @@
 ```
 
 当x为负数时，则继续调用该函数，只是参数发生了变化。当x大于0时，该递归结束。
-
-
 
 ### 尾递归
 

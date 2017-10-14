@@ -9,9 +9,7 @@
 > * When building a value with **x**,always use1for the value of the terminating line, for multiplying by1does not change the value of a multiplication.
 >
 > * When building a value with **cons**,always consider\(\)for the value of the terminating line.
-
-
-
+>
 > **The Seventh Commandment**:
 >
 > Recur on the **subparts **that are of the **same nature**:
@@ -56,10 +54,10 @@
 (define (factorial x)
   (my-if (= x 1)
          1
-         (* x (factorial (- x 1))))) 
+         (* x (factorial (- x 1)))))
 ```
 
-然而如果在REPL中输入` (factorial 10)` ，会发现，程序根本没有停下来。因为在运行的时候，使用的是**eager evaluation**，参数如果是函数，它会将继续evaluate该函数，导致程序不断运行。在原生的if函数中，有着明显的优先级关系：if 条件句**优先调**用，它的结果决定了之后的路线;而在my-if中，my-if的3个参数是并列的，它们之间并没有那么强的优先级关系。于是，在调用`(factorial 0)`的时候，悲剧发生了，因为并列关系，虽然`(= x 1)`为true，但是两个分值都继续运行着，不受其影响：`(my-if true 1 ( 0 (factorial -1)`，于是这个函数便将一直运行着。
+然而如果在REPL中输入`(factorial 10)` ，会发现，程序根本没有停下来。因为在运行的时候，使用的是**eager evaluation**，参数如果是函数，它会将继续evaluate该函数，导致程序不断运行。在原生的if函数中，有着明显的优先级关系：if 条件句**优先调**用，它的结果决定了之后的路线;而在my-if中，my-if的3个参数是并列的，它们之间并没有那么强的优先级关系。于是，在调用`(factorial 0)`的时候，悲剧发生了，因为并列关系，虽然`(= x 1)`为true，但是两个分值都继续运行着，不受其影响：`(my-if true 1 ( 0 (factorial -1)`，于是这个函数便将一直运行着。
 
 #### 矛盾的解决
 

@@ -9,5 +9,4 @@
 * [宏](hong.md)
 * [速度迷思](su-du-mi-si.md)
 * [考察语言的两个象限](chapter1.md)
-* 类型推导
 

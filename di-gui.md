@@ -66,15 +66,14 @@
 ```
 (define (my-if my-case a b)
   (if my-case
-      a
-      b))
+      (a)
+      (b))
 
 (define (factorial x)
   (my-if (= x 1)
          1
          (* x (factorial (- x 1)))))
-
 ```
 
-
+my-if的函数加了一层 `()` 外衣,而factorial传入的参数加上了`lambda()` 外衣。这样，当传入函数式，尽管是eager evaluation，但是因为该函数并不能直接调用，所以解决了这一矛盾。
 

@@ -64,11 +64,17 @@
 如果想让my-if 正常运行，那得是另一种形式，使用delayed evaluation。总结一些，其实delayed evaluation解决的是这样的一个**矛盾**：程序语言本身是eager evalution，如果传入参数，那就立即evaluate该参数，而使用者希望该函数能够在**调用该参数时**evalute。解决这一矛盾的，是lambda，既然lambda 可以传入空参数，那么直接给原函数加一个lambda外衣就好了：
 
 ```
+(define (my-if my-case a b)
+  (if my-case
+      (a)
+      (b)))
+
 (define (factorial x)
   (my-if (= x 1)
          (lambda () 1)
          (lambda ()
            (* x (factorial (- x 1))))))
+      
 ```
 
 

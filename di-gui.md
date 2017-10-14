@@ -66,15 +66,14 @@
 ```
 (define (my-if my-case a b)
   (if my-case
-      (a)
-      (b)))
+      a
+      b))
 
 (define (factorial x)
   (my-if (= x 1)
-         (lambda () 1)
-         (lambda ()
-           (* x (factorial (- x 1))))))
-      
+         1
+         (* x (factorial (- x 1)))))
+
 ```
 
 

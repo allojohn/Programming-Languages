@@ -25,7 +25,30 @@ val z = f (x + y)
 * \*\*remain to be done\*\*
 * with closures,we can avoid repeating computations that don't depend on function arguments.
 
+##### 避免重复计算
 
+```
+fun allShorterThan1 (xs,s) = 
+    filter (fn x => String.size x < (print "!"; String.size s), xs)
+
+fun allShorterThan2 (xs,s) =
+    let 
+	val i = (print "!"; String.size s)
+    in
+	filter(fn x => String.size x < i, xs)
+    end
+```
+
+以上两个函数完成相同的功能：筛选列表中长度小于s的元素。第一个函数的问题在于重复了太多计算：`String.size s `  在每个元素运算的时候，它都要被计算一次。第二个函数式在此基础上的改进：将本可以避免重复计算的`String.size s` 用let存入到环境中。因为lexical scope特点，所以不会被外面的同名变量覆盖。
+
+##### 组合函数
+
+```
+fun compose (f,g) = fn x => f (g x)
+
+```
+
+这个例子中，f,g均为函数，做到很好的抽象：我们可以暂时只传入f函数，如`fun temp = compose (fn y => y + 1)` 于是，我们可以将temp传递给其他函数。它不需要完全传入f 与g参数后，才能做操作。
 
 
 

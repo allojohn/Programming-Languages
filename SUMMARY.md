@@ -10,4 +10,5 @@
 * [速度迷思](su-du-mi-si.md)
 * [考察语言的两个象限](chapter1.md)
 * [赋值](fu-zhi.md)
+* [附：《冒号课堂》读书笔记](fu-ff1a-300a-mao-hao-ke-tang-300b-du-shu-bi-ji.md)
 

@@ -12,4 +12,5 @@
 * [赋值](fu-zhi.md)
 * [附：《冒号课堂》读书笔记](fu-ff1a-300a-mao-hao-ke-tang-300b-du-shu-bi-ji.md)
 * [附：对设计原则的理解](fu-ff1a-dui-she-ji-yuan-ze-de-li-jie.md)
+* [FP vs. OOP](fp-vs-oop.md)
 

@@ -12,6 +12,7 @@
   * generics
   * mixins
   * dynamic dispatch
+  * [doubts on Ruby](doubts on Ruby)
 * [static vs. dynamic](static versus dynamic.md)
 * [速度迷思](su-du-mi-si.md)
 * [考察语言的两个象限](chapter1.md)

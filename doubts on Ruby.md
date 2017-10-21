@@ -1,5 +1,10 @@
 ### 对Ruby的一些疑惑
-在学习Ruby的时候，产生了一些疑惑。列出它们只是作为记录，并不是为了批评：
+在学习Ruby的时候，产生了一些疑惑。列出它们只是作为记录，并不是为了批评。温伯格曾经说过一个法则，我很喜欢：
+> Count-to-Three Principle:
+If you cannot think of three ways of abusing a tool, you do not understand how to use it.”
+-- Weinberg, Gerald.  An Introduction to General Systems Thinking.
+
+说出了语言的种种缺点，才算对语言有了更好的理解，才会减少对语言的滥用，避免自己成为「铁锤人」。
 
 #### monky patching monkey
 patching指的是，可以在类外，添加类的方法。这么做看起来是很方便，可以随意添加，但是如果这个类创建了其他对象，并且实现这个对象的是另外一个程序员B。那么就很可能出现问
@@ -11,7 +16,7 @@ patching指的是，可以在类外，添加类的方法。这么做看起来是
 > 一个有能力的程序员能够意识到他自己脑容量的严格尺寸，因此，他谦逊的完成编程任务，牵涉到其他事情时，**他避免小聪明像躲避瘟疫一样**。
 
 #### block
-在我看来，block 完全多此一举。它不仅仅只是一个second-class function，而且因为它话只说了一半，结果程序员就一直需要记住这个负担。block 的功能就是一个“占位符”，不过它占的不是符号，而是一个函数。并且还可以额外传递一些函数给它。它完全可以模仿其他函数式语言的写法。
+在我看来，block 完全多此一举。它不仅仅只是一个second-class function，而且因为它话只说了一半，结果程序员就一直需要记住这个负担。block 的功能就是一个“占位符”，不过它占的不是符号，而是一个函数。并且还可以额外传递给它传递。其实它完全可以模仿其他函数式语言的写法。
 当其中又出现了proc这个first-class函数的写法时，你开始怀疑，作者一开始是不是没有吧first-class 这个语言特性设计好，只实现了传入函数的功能。
 
 ### late binding

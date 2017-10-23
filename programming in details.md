@@ -1,11 +1,3 @@
-### 过分追求语法糖
-
-> Programs must be written for people to **read**, and only incidentally for machines to execute."
->
-> Abelson & Sussman, SICP, preface to the first edition
-
-语法糖追求的是简化程序，但是有时候这样的简化实际上大大增加了程序员的认知负荷。以Currying为例，它实际上是一种语法糖，可以写成lambda形式，如果直接写成currying，问题在于，读代码的人需要耗费大量精力去理解这样的代码：他不知道这个currying到底需要几个参数，是否已经结束。
-
 ### 眼-脑定律
 
 杰拉德·温伯格在《系统化思维导论》中总结了一个精彩的定律：眼-脑定律：

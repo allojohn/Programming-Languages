@@ -2,9 +2,6 @@
 对double dispatch的一系列研究，是理解静态与动态OOP、函数式与OOP的区别一个很好案例。
 
 来看一个函数式中关于数据类型的例子。如果我们想要在一个数据类型中添加操作，那么实际上非常自然。
+![alt  text](/Users/mac/www.jiangxinwen.com/gitbook.jiangxinwen.com/Programming-Languages/assets/quadrants.png "quadrants")
 
-|      | eval| toString|hasZero|...|
-|:--------|---------:|:-------:|:-------:|:-------:|
-|Int|  |      |         |          |
-|Add|  |      |         |          |
-|Negate|  |      |         |          |
+

@@ -1,15 +1,10 @@
 > 两种类型的体制可以用两种法律原则来类比:静态类型检查类似“疑罪从有”的有罪推定制——再被证明合法之前是非法的，动态类型检查遵循"疑罪从无"的无罪推定制——在被证明合法之前是非法的。
 
 ### 概述
-静态类型语言与动态类型语言的最大区别，在于类型检查的不同。前者在编译期间完成类型检查，后者在程序运行的过程中才完成对类型的推断。
-《十二公民》
+静态类型语言与动态类型语言的区别，在于类型检查发生在不同的时间。前者在编译期间完成，后者在程序运行的过程中才完成推断。
 ![alt text](/Users/mac/www.jiangxinwen.com/gitbook.jiangxinwen.com/Programming-Languages/assets/static and dynamic checking.png "eagerness")
 
 #### duck typing
-
-> If I walk like a duck and quack like a duck ,then I am a duck.
-                                         -- fake duck
-
 duck typing 是动态语言的典型特征，或者说，动态类型天然地适合duck typing。下面是duck typing的例子：
 ```
 class Duck                     #会叫会游的鸭

@@ -6,8 +6,8 @@ If you cannot think of three ways of abusing a tool, you do not understand how t
 
 说出了语言的种种缺点，才算对语言有了更好的理解，才会减少对语言的滥用，避免自己成为「铁锤人」。
 
-#### monky patching
-patching指的是，可以在类外，添加类的方法。这么做看起来是很方便，可以随意添加，但是如果这个类创建了其他对象，并且实现这个对象的是另外一个程序员B。那么就很可能出现问
+#### monkey patching
+monkey patching指的是，可以在类外，添加类的方法。这么做看起来是很方便，可以随意添加，但是如果这个类创建了其他对象，并且实现这个对象的是另外一个程序员B。那么就很可能出现问
 题了。如果B创建了一个同名函数，原本的程序员A又将受到影响。
 最大的问题是，程序员需要**不断跳转**，寻找所有的定义，这实际上非常耗精力。设计的一大理念就是[「经济原则」](http://survivor99.com/gevolution/zny/book/2-3.htm)，它的部分表现为，功能上高度相关的部件需要尽量存放在一起。在**大时间周期**的视角下，这样的设计才能经得起考验。后来读书的时发现这一推论也被写成了一个原则:-)：局部化原则（locality principle）——是代码的物理紧密度应与逻辑紧密度保持一致。
 不由得想起Dijkstra在[获得图灵奖上的演讲](http://www.ituring.com.cn/article/71467)。
@@ -29,7 +29,7 @@ instanceC .m()
 ```
 
 如上所示，在该例中，当instanceC尝试调用方法m时，它率先在instanceC所属的类中查找，即classC，如果classC中不存在这样的类，那么就查询它的父类classB。这样的函数指定方式，是在运行期间(run-time)确立的，也因此为多态提供了条件。例如，classC自己自行定义函数m()，这样，当instanceC调用方法m()时，实际调用的是classC中的方法。
-另一方面，late binding的使用也需要非常小心。因为它很可能会**破坏父类的函数封装**。试看以下例子：
+另一方面，late binding的使用也需要非常小心。因为它很可能会**破坏父类的函数封装**。这便是「脆弱的基类问题」试看以下例子：
 ```
 classA = {
 	private static int plus(int x) {return (x + 1); }

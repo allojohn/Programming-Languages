@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [函数式](functional programming.md)
-  * [递归](recursion.md.md)
+  * [递归](recursion.md)
   * [高阶函数](higher-order function.md)
   * [闭包](closures.md)
   * [模式匹配](pattern matching.md)

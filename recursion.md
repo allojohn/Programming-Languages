@@ -1,6 +1,6 @@
 ### 烧脑的递归
 
-我还记得自己一开始大量写递归函数的经历，那段时间我分别用ML和Scheme来写递归，烧脑，写了不少，但是还是不得其法。后来看了The Little Schemer，诶，我后悔没有早点接触此书。书中介绍的“十诫”\(ten commandments\)，启发极大。尤其是其中的几个写递归的技巧，如：
+我还记得自己一开始大量写递归函数的经历，那段时间我分别用ML和Scheme来写递归，烧脑，写了不少，但是还是不得其法。后来看了The Little Schemer。我后悔没有早点接触此书。书中介绍的“十诫”\(ten commandments\)，启发极大。尤其是其中的几个写递归的技巧，如：
 
 > **The fifth Commandment**:
 >
@@ -61,7 +61,7 @@
 
 #### 矛盾的解决
 
-如果想让my-if 正常运行，那得是另一种形式，使用**delayed evaluation技巧**。总结一些，其实delayed evaluation解决的是这样的一个**矛盾**：程序语言本身是eager evalution，如果传入参数，那就立即evaluate该参数，而使用者希望该函数能够在**调用该参数时**evalute。解决这一矛盾的，是lambda，既然lambda 可以传入空参数，那么直接给原函数加一个lambda外衣就好了：
+如果想让my-if 正常运行，那得是另一种形式，使用「**delayed evaluation」技巧**。总结一些，其实delayed evaluation解决的是这样的一个**矛盾**：程序语言本身是eager evalution，如果传入参数，那就立即evaluate该参数，而使用者希望该函数能够在**调用该参数时**evalute。解决这一矛盾的，是lambda，既然lambda 可以传入空参数，那么直接给原函数加一个lambda外衣就好了：
 
 ```
 (define (my-if my-case a b)

@@ -13,13 +13,10 @@
   * [double dispatch](double dispatch.md)
   * [doubts on Ruby](doubts on Ruby.md)
 * [static vs. dynamic checking](static versus dynamic.md)
-* [考察语言的两个象限](quadrant of languages.md)
 * [副作用](side effect.md)
 * [FP vs. OOP](fp-vs-oop.md)
 * [What's next?](what is next.md)
 * [附：《冒号课堂》读书笔记](maohaoketang.md)
 * [附：《冒号课堂》摘录](quotations maohao.md)
 * [附：对设计原则的理解](design method.md)
-
-
 

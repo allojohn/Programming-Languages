@@ -1,14 +1,10 @@
-> The importance of this is that there are
->
-> powerful program-design techniques that rely on the ability to blur the
->
-> traditional distinction between "passive" data and "active" processes.
+> The importance of this is that there are powerful program-design techniques that rely on the ability to blur the traditional distinction between "passive" data and "active" processes.
 >
 > --SICP
 
 ### 高阶函数的意义
 
-高阶函数（first-class functions）的意义，在于通过增强函数的功能，使程序可以做到更好的抽象。函数有以下的特点：
+高阶函数（first-class functions）的意义，在于通过增强函数的功能，使程序可以做到更好的抽象。高阶函数函数有以下的特点：
 
 1. 可以被变量命名
 2. 将函数作为参数传入函数
@@ -22,13 +18,13 @@
 #### 将函数作为传入参数
 
 ```ML
-fun addition function x =
-   1 + (function x)
+fun addition functionA variableX =
+   1 + (functionA variableX)
 ```
 
 经编译后，REPL返回如下信息：
 
-> val addition = fn : \('a -&gt; int\) -&gt; 'a -&gt; int
+`val addition = fn : ('a -> int) -> 'a -> int`
 
 在该程序中，函数接受两个参数，其中function 也是函数，于是，传入的functin函数实际上可以有不同方式，该函数满足的条件是：以x参数返回一个int类型。这便做到了**过程抽象（procedural abstraction）**。
 
